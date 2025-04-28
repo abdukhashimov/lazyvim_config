@@ -21,13 +21,6 @@ return {
             },
           },
         },
-        golangci_lint_ls = {
-          cmd = { "golangci-lint-langserver" },
-          filetypes = { "go" },
-          init_options = {
-            command = { "golangci-lint", "run", "--out-format", "json" },
-          },
-        },
       },
     },
   },
