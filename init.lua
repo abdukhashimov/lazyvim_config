@@ -15,3 +15,4 @@ map("n", "<leader>tb", gitsigns.toggle_current_line_blame, {
   silent = true,
   desc = "Toggle Git Blame",
 })
+vim.cmd.colorscheme("catppuccin")
