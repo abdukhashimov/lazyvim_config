@@ -8,11 +8,4 @@ vim.o.backup = false
 vim.o.writebackup = false
 vim.o.wrap = true -- Enable line wrapping
 vim.opt.wildignore:append({ "**/node_modules/**", "**/vendor/**" })
-local map = vim.keymap.set
-local gitsigns = require("gitsigns")
-map("n", "<leader>tb", gitsigns.toggle_current_line_blame, {
-  noremap = true,
-  silent = true,
-  desc = "Toggle Git Blame",
-})
 vim.cmd.colorscheme("catppuccin")
