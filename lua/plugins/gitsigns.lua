@@ -2,7 +2,7 @@ return {
   "lewis6991/gitsigns.nvim",
   event = "LazyFile",
   opts = {
-    linehl = true,
+    linehl = false,
     current_line_blame = true,
     current_line_blame_opts = {
       virt_text = true,
