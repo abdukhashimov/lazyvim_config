@@ -4,6 +4,7 @@ return {
     formatters_by_ft = {
       sql = { "sqlfluff" },
       pgsql = { "sqlfluff" },
+      proto = { "clang_format" },
     },
     formatters = {
       sqlfluff = {
@@ -13,6 +14,11 @@ return {
         cwd = function()
           return vim.fn.getcwd()
         end,
+      },
+      clang_format = {
+        command = "clang-format",
+        args = { "--assume-filename", "$FILENAME" },
+        stdin = true,
       },
     },
   },
