@@ -23,6 +23,14 @@ return {
     -- A package is also available for PHPUnit if needed.
     "nvim-neotest/neotest",
     dependencies = { "V13Axel/neotest-pest" },
-    opts = { adapters = { "neotest-pest" } },
+    opts = function(_, opts)
+      -- Ensure adapters table exists
+      opts.adapters = opts.adapters or {}
+
+      -- Add neotest-pest to existing adapters
+      table.insert(opts.adapters, require("neotest-pest"))
+
+      return opts
+    end,
   },
 }
