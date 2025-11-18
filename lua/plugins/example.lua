@@ -121,10 +121,6 @@ return {
     opts = {
       ensure_installed = {
         "bash",
-        "go",
-        "gomod",
-        "gosum",
-        "gowork",
         "html",
         "javascript",
         "json",

@@ -2,14 +2,3 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 vim.g.lazyvim_php_lsp = "intelephense"
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "sql", "mysql", "plsql" },
-  callback = function()
-    require("cmp").setup.buffer({
-      sources = {
-        { name = "vim-dadbod-completion" },
-        { name = "buffer" },
-      },
-    })
-  end,
-})

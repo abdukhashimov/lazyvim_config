@@ -18,6 +18,9 @@ return {
                 parameterNames = false,
                 rangeVariableTypes = false,
               },
+              analyses = {
+                ST1000 = false,
+              },
             },
           },
         },
