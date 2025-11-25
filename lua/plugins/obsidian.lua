@@ -12,6 +12,10 @@ return {
         name = "personal",
         path = "~/Documents/notes", -- Change this to your actual vault path
       },
+      {
+        name = "personal",
+        path = "/home/max/go/src/github.com/hyssa/project_docs/content", -- Change this to your actual vault path
+      },
       -- You can add multiple workspaces:
       -- {
       --   name = "work",

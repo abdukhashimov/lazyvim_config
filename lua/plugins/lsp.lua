@@ -7,8 +7,15 @@ return {
       },
       servers = {
         gopls = {
+          filetypes = { "go", "gomod", "gowork", "gotmpl" },
           settings = {
             gopls = {
+              directoryFilters = {
+                "-**/node_modules",
+                "-**/.git",
+                "-**/vendor",
+                "-**/proto",
+              },
               hints = {
                 assignVariableTypes = false,
                 compositeLiteralFields = false,
